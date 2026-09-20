@@ -1015,3 +1015,9 @@
     z-index: 10;
   }
 }
+/* Sembunyikan badge Netlify */
+[data-netlify-deploy-id],
+#netlify-feedback-drawer,
+iframe[src*="netlify"] {
+    display: none !important;
+}
