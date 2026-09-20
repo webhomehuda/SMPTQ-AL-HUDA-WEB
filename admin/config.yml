@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "berita"
+    label: "Berita & Artikel"
+    folder: "content/berita"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Judul Artikel", name: "title", widget: "string" }
+      - { label: "Tanggal Publish", name: "date", widget: "datetime" }
+      - { label: "Gambar Sampul / Utama", name: "thumbnail", widget: "image", required: false }
+      - { label: "File Video / Dokumen (Opsional)", name: "video_file", widget: "file", required: false }
+      - { label: "Link Youtube Video (Opsional)", name: "youtube_url", widget: "string", required: false }
+      - { label: "Ringkasan Singkat", name: "description", widget: "text" }
+      - { label: "Isi Konten / Artikel", name: "body", widget: "rich-text" }
