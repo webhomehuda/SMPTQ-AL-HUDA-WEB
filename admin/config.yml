@@ -18,4 +18,5 @@ collections:
       - { label: "File Video / Dokumen (Opsional)", name: "video_file", widget: "file", required: false }
       - { label: "Link Youtube Video (Opsional)", name: "youtube_url", widget: "string", required: false }
       - { label: "Ringkasan Singkat", name: "description", widget: "text" }
-      - { label: "Isi Konten / Artikel", name: "body", widget: "rich-text" }
+      - { label: "Isi Konten / Artikel", name: "body", widget: "markdown" }
+      
